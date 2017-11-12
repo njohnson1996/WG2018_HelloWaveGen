@@ -17461,3 +17461,66 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 
 !ENTRY com.xilinx.sdk.utils 0 0 2017-11-10 08:44:54.289
 !MESSAGE XSCT command with result: [::hsi::utils::get_bram_blocks C:/Users/Thomas/Documents/GitHub/Hello_World3/Hello_World3.sdk/design_1_wrapper_hw_platform_0/system.hdf ], Result: [null, microblaze_0_local_memory_dlmb_bram_if_cntlr microblaze_0_local_memory_ilmb_bram_if_cntlr]. Thread: ModalContext
+!SESSION 2017-11-11 22:54:25.368 -----------------------------------------------
+eclipse.buildId=2017.3
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/SurfacePro4/Documents/GitHub/WG2018_HelloWaveGen/Hello_World3.sdk
+
+!ENTRY org.eclipse.ui 2 0 2017-11-11 22:54:29.143
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-11-11 22:54:29.143
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2017-11-11 22:54:30.069
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-11-11 22:54:30.069
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-11-11 22:54:39.047
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-11-11 22:54:39.063
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-11-11 22:54:39.678
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-0
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-11-11 22:54:39.685
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-11-11 22:54:39.826
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/SurfacePro4/Documents/GitHub/WG2018_HelloWaveGen/Hello_World3.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-11-11 22:54:39.906
+!MESSAGE XSCT Command: [setws C:/Users/SurfacePro4/Documents/GitHub/WG2018_HelloWaveGen/Hello_World3.sdk], Thread: Thread-14
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-11-11 22:54:42.974
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/SurfacePro4/Documents/GitHub/WG2018_HelloWaveGen/Hello_World3.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-11-11 22:54:42.979
+!MESSAGE XSCT command with result: [setws C:/Users/SurfacePro4/Documents/GitHub/WG2018_HelloWaveGen/Hello_World3.sdk], Result: [null, ]. Thread: Thread-14
+
+!ENTRY org.eclipse.core.resources 4 568 2017-11-11 22:54:43.173
+!MESSAGE Could not write metadata for '/RemoteSystemsTempFiles'.
+!STACK 0
+java.io.FileNotFoundException: C:\Users\SurfacePro4\Documents\GitHub\WG2018_HelloWaveGen\Hello_World3.sdk\.metadata\.plugins\org.eclipse.core.resources\.projects\RemoteSystemsTempFiles\.markers.snap (The system cannot find the path specified)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:133)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:45)
+	at org.eclipse.core.internal.localstore.SafeChunkyOutputStream.<init>(SafeChunkyOutputStream.java:41)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1768)
+	at org.eclipse.core.internal.resources.SaveManager.visitAndSnap(SaveManager.java:1852)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1224)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1165)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-11-11 22:54:43.183
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/SurfacePro4/Documents/GitHub/WG2018_HelloWaveGen/Hello_World3.sdk/design_1_wrapper_hw_platform_1/system.hdf], Thread: Worker-4
+
+!ENTRY com.xilinx.sdk.utils 0 0 2017-11-11 22:54:43.380
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/SurfacePro4/Documents/GitHub/WG2018_HelloWaveGen/Hello_World3.sdk/design_1_wrapper_hw_platform_1/system.hdf], Result: [null, ]. Thread: Worker-4

@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
 -- Date        : Sat Nov  4 15:37:37 2017
 -- Host        : Thomas-labtop running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Thomas/Documents/GitHub/Hello_World3/Hello_World3.srcs/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_dlmb_v10_0 -prefix
+--               design_1_dlmb_v10_0_ design_1_dlmb_v10_0_sim_netlist.vhdl
 -- Design      : design_1_dlmb_v10_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -50,8 +50,6 @@ entity design_1_dlmb_v10_0_lmb_v10 is
   attribute C_LMB_DWIDTH of design_1_dlmb_v10_0_lmb_v10 : entity is 32;
   attribute C_LMB_NUM_SLAVES : integer;
   attribute C_LMB_NUM_SLAVES of design_1_dlmb_v10_0_lmb_v10 : entity is 1;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_dlmb_v10_0_lmb_v10 : entity is "lmb_v10";
 end design_1_dlmb_v10_0_lmb_v10;
 
 architecture STRUCTURE of design_1_dlmb_v10_0_lmb_v10 is

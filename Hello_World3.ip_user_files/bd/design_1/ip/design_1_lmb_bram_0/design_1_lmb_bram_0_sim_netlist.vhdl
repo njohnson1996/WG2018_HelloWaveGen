@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
--- Date        : Sat Nov  4 15:48:53 2017
+-- Date        : Sat Nov  4 15:48:52 2017
 -- Host        : Thomas-labtop running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Thomas/Documents/GitHub/Hello_World3/Hello_World3.srcs/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_lmb_bram_0 -prefix
+--               design_1_lmb_bram_0_ design_1_lmb_bram_0_sim_netlist.vhdl
 -- Design      : design_1_lmb_bram_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -31,8 +31,6 @@ entity design_1_lmb_bram_0_blk_mem_gen_prim_wrapper is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_lmb_bram_0_blk_mem_gen_prim_wrapper : entity is "blk_mem_gen_prim_wrapper";
 end design_1_lmb_bram_0_blk_mem_gen_prim_wrapper;
 
 architecture STRUCTURE of design_1_lmb_bram_0_blk_mem_gen_prim_wrapper is
@@ -4387,8 +4385,6 @@ entity design_1_lmb_bram_0_blk_mem_gen_prim_width is
     wea : in STD_LOGIC_VECTOR ( 0 to 0 );
     web : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_lmb_bram_0_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end design_1_lmb_bram_0_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of design_1_lmb_bram_0_blk_mem_gen_prim_width is
@@ -5351,8 +5347,6 @@ entity design_1_lmb_bram_0_blk_mem_gen_generic_cstr is
     rstb : in STD_LOGIC;
     enb : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_lmb_bram_0_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end design_1_lmb_bram_0_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of design_1_lmb_bram_0_blk_mem_gen_generic_cstr is
@@ -5683,8 +5677,6 @@ entity design_1_lmb_bram_0_blk_mem_gen_top is
     rstb : in STD_LOGIC;
     enb : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_lmb_bram_0_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end design_1_lmb_bram_0_blk_mem_gen_top;
 
 architecture STRUCTURE of design_1_lmb_bram_0_blk_mem_gen_top is
@@ -5732,8 +5724,6 @@ entity design_1_lmb_bram_0_blk_mem_gen_v8_4_0_synth is
     rstb : in STD_LOGIC;
     enb : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_lmb_bram_0_blk_mem_gen_v8_4_0_synth : entity is "blk_mem_gen_v8_4_0_synth";
 end design_1_lmb_bram_0_blk_mem_gen_v8_4_0_synth;
 
 architecture STRUCTURE of design_1_lmb_bram_0_blk_mem_gen_v8_4_0_synth is
@@ -5974,8 +5964,6 @@ entity design_1_lmb_bram_0_blk_mem_gen_v8_4_0 is
   attribute C_WRITE_WIDTH_B of design_1_lmb_bram_0_blk_mem_gen_v8_4_0 : entity is 32;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of design_1_lmb_bram_0_blk_mem_gen_v8_4_0 : entity is "spartan7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_lmb_bram_0_blk_mem_gen_v8_4_0 : entity is "blk_mem_gen_v8_4_0";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of design_1_lmb_bram_0_blk_mem_gen_v8_4_0 : entity is "yes";
 end design_1_lmb_bram_0_blk_mem_gen_v8_4_0;

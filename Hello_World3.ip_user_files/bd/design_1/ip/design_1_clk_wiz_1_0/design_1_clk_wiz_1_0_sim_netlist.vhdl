@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
--- Date        : Sat Nov  4 15:27:37 2017
--- Host        : Thomas-labtop running 64-bit major release  (build 9200)
+-- Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+-- Date        : Sat Nov 11 13:15:07 2017
+-- Host        : DESKTOP-VQRV186 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/Users/Thomas/Documents/GitHub/Hello_World3/Hello_World3.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_sim_netlist.vhdl
+--               C:/Users/SurfacePro4/Documents/GitHub/WG2018_HelloWaveGen/Hello_World3.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_sim_netlist.vhdl
 -- Design      : design_1_clk_wiz_1_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -17,7 +17,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_clk_wiz_1_0_design_1_clk_wiz_1_0_clk_wiz is
   port (
     clk_out1 : out STD_LOGIC;
-    reset : in STD_LOGIC;
+    resetn : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
@@ -30,6 +30,7 @@ architecture STRUCTURE of design_1_clk_wiz_1_0_design_1_clk_wiz_1_0_clk_wiz is
   signal clk_out1_design_1_clk_wiz_1_0 : STD_LOGIC;
   signal clkfbout_buf_design_1_clk_wiz_1_0 : STD_LOGIC;
   signal clkfbout_design_1_clk_wiz_1_0 : STD_LOGIC;
+  signal reset_high : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED : STD_LOGIC;
@@ -160,7 +161,15 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       PSEN => '0',
       PSINCDEC => '0',
       PWRDWN => '0',
-      RST => reset
+      RST => reset_high
+    );
+mmcm_adv_inst_i_1: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => resetn,
+      O => reset_high
     );
 end STRUCTURE;
 library IEEE;
@@ -170,7 +179,7 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_clk_wiz_1_0 is
   port (
     clk_out1 : out STD_LOGIC;
-    reset : in STD_LOGIC;
+    resetn : in STD_LOGIC;
     locked : out STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
@@ -185,6 +194,6 @@ inst: entity work.design_1_clk_wiz_1_0_design_1_clk_wiz_1_0_clk_wiz
       clk_in1 => clk_in1,
       clk_out1 => clk_out1,
       locked => locked,
-      reset => reset
+      resetn => resetn
     );
 end STRUCTURE;

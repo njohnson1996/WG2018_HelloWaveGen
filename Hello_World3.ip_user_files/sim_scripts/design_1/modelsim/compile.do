@@ -171,6 +171,13 @@ vlog -work blk_mem_gen_v8_4_0 -64 -incr "+incdir+../../../../Hello_World3.srcs/s
 
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../../Hello_World3.srcs/sources_1/bd/design_1/ipshared/5123" "+incdir+../../../../Hello_World3.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Hello_World3.srcs/sources_1/bd/design_1/ipshared/5123" "+incdir+../../../../Hello_World3.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/ip/design_1_lmb_bram_0/sim/design_1_lmb_bram_0.v" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_2_0/sim/design_1_axi_gpio_2_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_3_0/sim/design_1_axi_gpio_3_0.vhd" \
+
+vlog -work xil_defaultlib -64 -incr "+incdir+../../../../Hello_World3.srcs/sources_1/bd/design_1/ipshared/5123" "+incdir+../../../../Hello_World3.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../Hello_World3.srcs/sources_1/bd/design_1/ipshared/5123" "+incdir+../../../../Hello_World3.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
 "../../../bd/design_1/sim/design_1.v" \
 
 vlog -work xil_defaultlib \

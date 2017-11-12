@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Thomas/Documents/GitHub/Hello_World3/Hello_World3.runs/design_1_axi_gpio_3_0_synth_1'
+HD_PWD='C:/Users/SurfacePro4/Documents/GitHub/WG2018_HelloWaveGen/Hello_World3.runs/design_1_axi_gpio_3_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
-// Date        : Tue Nov  7 20:09:48 2017
-// Host        : Thomas-labtop running 64-bit major release  (build 9200)
+// Tool Version: Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+// Date        : Sun Nov 12 13:43:37 2017
+// Host        : DESKTOP-VQRV186 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               C:/Users/Thomas/Documents/GitHub/Hello_World3/Hello_World3.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_stub.v
+//               C:/Users/SurfacePro4/Documents/GitHub/WG2018_HelloWaveGen/Hello_World3.srcs/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_stub.v
 // Design      : design_1_microblaze_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7s50csga324-1
@@ -13,7 +13,7 @@
 // This empty module with port declaration file causes synthesis tools to infer a black box for IP.
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
-(* x_core_info = "MicroBlaze,Vivado 2017.3.1" *)
+(* x_core_info = "MicroBlaze,Vivado 2017.3" *)
 module design_1_microblaze_0_0(Clk, Reset, Interrupt, Interrupt_Address, 
   Interrupt_Ack, Instr_Addr, Instr, IFetch, I_AS, IReady, IWAIT, ICE, IUE, Data_Addr, Data_Read, 
   Data_Write, D_AS, Read_Strobe, Write_Strobe, DReady, DWait, DCE, DUE, Byte_Enable, M_AXI_DP_AWADDR, 
@@ -21,8 +21,14 @@ module design_1_microblaze_0_0(Clk, Reset, Interrupt, Interrupt_Address,
   M_AXI_DP_WVALID, M_AXI_DP_WREADY, M_AXI_DP_BRESP, M_AXI_DP_BVALID, M_AXI_DP_BREADY, 
   M_AXI_DP_ARADDR, M_AXI_DP_ARPROT, M_AXI_DP_ARVALID, M_AXI_DP_ARREADY, M_AXI_DP_RDATA, 
   M_AXI_DP_RRESP, M_AXI_DP_RVALID, M_AXI_DP_RREADY, Dbg_Clk, Dbg_TDI, Dbg_TDO, Dbg_Reg_En, 
-  Dbg_Shift, Dbg_Capture, Dbg_Update, Debug_Rst, Dbg_Disable)
-/* synthesis syn_black_box black_box_pad_pin="Clk,Reset,Interrupt,Interrupt_Address[0:31],Interrupt_Ack[0:1],Instr_Addr[0:31],Instr[0:31],IFetch,I_AS,IReady,IWAIT,ICE,IUE,Data_Addr[0:31],Data_Read[0:31],Data_Write[0:31],D_AS,Read_Strobe,Write_Strobe,DReady,DWait,DCE,DUE,Byte_Enable[0:3],M_AXI_DP_AWADDR[31:0],M_AXI_DP_AWPROT[2:0],M_AXI_DP_AWVALID,M_AXI_DP_AWREADY,M_AXI_DP_WDATA[31:0],M_AXI_DP_WSTRB[3:0],M_AXI_DP_WVALID,M_AXI_DP_WREADY,M_AXI_DP_BRESP[1:0],M_AXI_DP_BVALID,M_AXI_DP_BREADY,M_AXI_DP_ARADDR[31:0],M_AXI_DP_ARPROT[2:0],M_AXI_DP_ARVALID,M_AXI_DP_ARREADY,M_AXI_DP_RDATA[31:0],M_AXI_DP_RRESP[1:0],M_AXI_DP_RVALID,M_AXI_DP_RREADY,Dbg_Clk,Dbg_TDI,Dbg_TDO,Dbg_Reg_En[0:7],Dbg_Shift,Dbg_Capture,Dbg_Update,Debug_Rst,Dbg_Disable" */;
+  Dbg_Shift, Dbg_Capture, Dbg_Update, Debug_Rst, Dbg_Disable, M0_AXIS_TLAST, M0_AXIS_TDATA, 
+  M0_AXIS_TVALID, M0_AXIS_TREADY, M1_AXIS_TLAST, M1_AXIS_TDATA, M1_AXIS_TVALID, 
+  M1_AXIS_TREADY, M2_AXIS_TLAST, M2_AXIS_TDATA, M2_AXIS_TVALID, M2_AXIS_TREADY, 
+  M3_AXIS_TLAST, M3_AXIS_TDATA, M3_AXIS_TVALID, M3_AXIS_TREADY, S0_AXIS_TLAST, S0_AXIS_TDATA, 
+  S0_AXIS_TVALID, S0_AXIS_TREADY, S1_AXIS_TLAST, S1_AXIS_TDATA, S1_AXIS_TVALID, 
+  S1_AXIS_TREADY, S2_AXIS_TLAST, S2_AXIS_TDATA, S2_AXIS_TVALID, S2_AXIS_TREADY, 
+  S3_AXIS_TLAST, S3_AXIS_TDATA, S3_AXIS_TVALID, S3_AXIS_TREADY)
+/* synthesis syn_black_box black_box_pad_pin="Clk,Reset,Interrupt,Interrupt_Address[0:31],Interrupt_Ack[0:1],Instr_Addr[0:31],Instr[0:31],IFetch,I_AS,IReady,IWAIT,ICE,IUE,Data_Addr[0:31],Data_Read[0:31],Data_Write[0:31],D_AS,Read_Strobe,Write_Strobe,DReady,DWait,DCE,DUE,Byte_Enable[0:3],M_AXI_DP_AWADDR[31:0],M_AXI_DP_AWPROT[2:0],M_AXI_DP_AWVALID,M_AXI_DP_AWREADY,M_AXI_DP_WDATA[31:0],M_AXI_DP_WSTRB[3:0],M_AXI_DP_WVALID,M_AXI_DP_WREADY,M_AXI_DP_BRESP[1:0],M_AXI_DP_BVALID,M_AXI_DP_BREADY,M_AXI_DP_ARADDR[31:0],M_AXI_DP_ARPROT[2:0],M_AXI_DP_ARVALID,M_AXI_DP_ARREADY,M_AXI_DP_RDATA[31:0],M_AXI_DP_RRESP[1:0],M_AXI_DP_RVALID,M_AXI_DP_RREADY,Dbg_Clk,Dbg_TDI,Dbg_TDO,Dbg_Reg_En[0:7],Dbg_Shift,Dbg_Capture,Dbg_Update,Debug_Rst,Dbg_Disable,M0_AXIS_TLAST,M0_AXIS_TDATA[31:0],M0_AXIS_TVALID,M0_AXIS_TREADY,M1_AXIS_TLAST,M1_AXIS_TDATA[31:0],M1_AXIS_TVALID,M1_AXIS_TREADY,M2_AXIS_TLAST,M2_AXIS_TDATA[31:0],M2_AXIS_TVALID,M2_AXIS_TREADY,M3_AXIS_TLAST,M3_AXIS_TDATA[31:0],M3_AXIS_TVALID,M3_AXIS_TREADY,S0_AXIS_TLAST,S0_AXIS_TDATA[31:0],S0_AXIS_TVALID,S0_AXIS_TREADY,S1_AXIS_TLAST,S1_AXIS_TDATA[31:0],S1_AXIS_TVALID,S1_AXIS_TREADY,S2_AXIS_TLAST,S2_AXIS_TDATA[31:0],S2_AXIS_TVALID,S2_AXIS_TREADY,S3_AXIS_TLAST,S3_AXIS_TDATA[31:0],S3_AXIS_TVALID,S3_AXIS_TREADY" */;
   input Clk;
   input Reset;
   input Interrupt;
@@ -75,4 +81,36 @@ module design_1_microblaze_0_0(Clk, Reset, Interrupt, Interrupt_Address,
   input Dbg_Update;
   input Debug_Rst;
   input Dbg_Disable;
+  output M0_AXIS_TLAST;
+  output [31:0]M0_AXIS_TDATA;
+  output M0_AXIS_TVALID;
+  input M0_AXIS_TREADY;
+  output M1_AXIS_TLAST;
+  output [31:0]M1_AXIS_TDATA;
+  output M1_AXIS_TVALID;
+  input M1_AXIS_TREADY;
+  output M2_AXIS_TLAST;
+  output [31:0]M2_AXIS_TDATA;
+  output M2_AXIS_TVALID;
+  input M2_AXIS_TREADY;
+  output M3_AXIS_TLAST;
+  output [31:0]M3_AXIS_TDATA;
+  output M3_AXIS_TVALID;
+  input M3_AXIS_TREADY;
+  input S0_AXIS_TLAST;
+  input [31:0]S0_AXIS_TDATA;
+  input S0_AXIS_TVALID;
+  output S0_AXIS_TREADY;
+  input S1_AXIS_TLAST;
+  input [31:0]S1_AXIS_TDATA;
+  input S1_AXIS_TVALID;
+  output S1_AXIS_TREADY;
+  input S2_AXIS_TLAST;
+  input [31:0]S2_AXIS_TDATA;
+  input S2_AXIS_TVALID;
+  output S2_AXIS_TREADY;
+  input S3_AXIS_TLAST;
+  input [31:0]S3_AXIS_TDATA;
+  input S3_AXIS_TVALID;
+  output S3_AXIS_TREADY;
 endmodule

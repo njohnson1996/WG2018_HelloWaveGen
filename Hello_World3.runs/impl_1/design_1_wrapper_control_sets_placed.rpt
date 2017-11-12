@@ -1,12 +1,12 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
---------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.3.1 (win64) Build 2035080 Fri Oct 20 14:20:01 MDT 2017
-| Date         : Thu Nov  9 23:45:28 2017
-| Host         : Thomas-labtop running 64-bit major release  (build 9200)
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.3 (win64) Build 2018833 Wed Oct  4 19:58:22 MDT 2017
+| Date         : Sun Nov 12 14:45:36 2017
+| Host         : DESKTOP-VQRV186 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -file design_1_wrapper_control_sets_placed.rpt
 | Design       : design_1_wrapper
 | Device       : xc7s50
---------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 Control Set Information
 
@@ -21,7 +21,7 @@ Table of Contents
 +-------------------------------+-------+
 |             Status            | Count |
 +-------------------------------+-------+
-| Number of unique control sets |   118 |
+| Number of unique control sets |   823 |
 +-------------------------------+-------+
 
 
@@ -31,12 +31,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             371 |          121 |
-| No           | No                    | Yes                    |              30 |            8 |
-| No           | Yes                   | No                     |             446 |          177 |
-| Yes          | No                    | No                     |             357 |          103 |
-| Yes          | No                    | Yes                    |              15 |            8 |
-| Yes          | Yes                   | No                     |            1173 |          363 |
+| No           | No                    | No                     |            8514 |         2244 |
+| No           | No                    | Yes                    |             156 |           51 |
+| No           | Yes                   | No                     |            2823 |         1054 |
+| Yes          | No                    | No                     |            5946 |         1852 |
+| Yes          | No                    | Yes                    |             128 |           35 |
+| Yes          | Yes                   | No                     |            1715 |          540 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 

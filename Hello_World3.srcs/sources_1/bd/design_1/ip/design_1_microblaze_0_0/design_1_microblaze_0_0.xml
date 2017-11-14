@@ -16630,7 +16630,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_Trig_In" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) &lt; 2))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_Trig_In" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) &lt; 2))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -16657,7 +16657,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_Trig_Ack_In" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) &lt; 2))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_Trig_Ack_In" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) &lt; 2))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -16684,7 +16684,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_Trig_Out" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) &lt; 2))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_Trig_Out" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) &lt; 2))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -16708,7 +16708,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_Trig_Ack_Out" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) &lt; 2))">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.Dbg_Trig_Ack_Out" xilinx:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_ENABLED&apos;)) > 1) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_LOCKSTEP_SLAVE&apos;)) = 0) and (spirit:decode(id(&apos;PARAM_VALUE.C_LOCKSTEP_SELECT&apos;)) &lt; 2) and (spirit:decode(id(&apos;MODELPARAM_VALUE.C_DEBUG_INTERFACE&apos;)) &lt; 2))">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -24180,7 +24180,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_DEBUG_ENABLED</spirit:name>
         <spirit:displayName>MicroBlaze Debug Module Interface</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DEBUG_ENABLED" spirit:choiceRef="choice_pairs_7bfd418d">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_DEBUG_ENABLED" spirit:choiceRef="choice_pairs_7bfd418d">2</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_DEBUG_INTERFACE</spirit:name>
@@ -25866,7 +25866,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
     <spirit:parameter>
       <spirit:name>C_DEBUG_ENABLED</spirit:name>
       <spirit:displayName>MicroBlaze Debug Module Interface</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DEBUG_ENABLED" spirit:choiceRef="choice_pairs_7bfd418d" spirit:order="5000" spirit:configGroups="5 Hardware Breakpoints">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_DEBUG_ENABLED" spirit:choiceRef="choice_pairs_7bfd418d" spirit:order="5000" spirit:configGroups="5 Hardware Breakpoints">2</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -25930,7 +25930,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_EVENT_COUNTERS">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_EVENT_COUNTERS">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -25942,7 +25942,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_LATENCY_COUNTERS">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_LATENCY_COUNTERS">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -25954,7 +25954,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_COUNTER_WIDTH">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_COUNTER_WIDTH">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -25966,7 +25966,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_TRACE_SIZE">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_TRACE_SIZE">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -25978,7 +25978,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_EXTERNAL_TRACE">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_EXTERNAL_TRACE">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -26002,7 +26002,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
-            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_PROFILE_SIZE">false</xilinx:isEnabled>
+            <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PARAM_ENABLEMENT.C_DEBUG_PROFILE_SIZE">true</xilinx:isEnabled>
           </xilinx:enablement>
         </xilinx:parameterInfo>
       </spirit:vendorExtensions>
@@ -27559,22 +27559,22 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M3_AXIS.TDEST_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M3_AXIS.TID_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M3_AXIS.TUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.ADDR_WIDTH" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.ARUSER_WIDTH" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.AWUSER_WIDTH" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.ADDR_WIDTH" xilinx:valueSource="user_init" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.ARUSER_WIDTH" xilinx:valueSource="user_init" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.AWUSER_WIDTH" xilinx:valueSource="user_init" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.BUSER_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.CLK_DOMAIN" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.DATA_WIDTH" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.DATA_WIDTH" xilinx:valueSource="user_init" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.FREQ_HZ" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_BRESP" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_BRESP" xilinx:valueSource="user_init" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_BURST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_CACHE" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_LOCK" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_PROT" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_QOS" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_CACHE" xilinx:valueSource="user_init" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_LOCK" xilinx:valueSource="user_init" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_PROT" xilinx:valueSource="user_init" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_QOS" xilinx:valueSource="user_init" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_REGION" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_RRESP" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_WSTRB" xilinx:valueSource="user" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_RRESP" xilinx:valueSource="user_init" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.HAS_WSTRB" xilinx:valueSource="user_init" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.ID_WIDTH" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.MAX_BURST_LENGTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXI_DC.NUM_READ_OUTSTANDING" xilinx:valuePermission="bd"/>
@@ -27656,7 +27656,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.CLK_DOMAIN" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.FREQ_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.HAS_TKEEP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.HAS_TLAST" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.HAS_TLAST" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.HAS_TREADY" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.HAS_TSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_AXIS.PHASE" xilinx:valuePermission="bd"/>
@@ -27667,7 +27667,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S1_AXIS.CLK_DOMAIN" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S1_AXIS.FREQ_HZ" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S1_AXIS.HAS_TKEEP" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S1_AXIS.HAS_TLAST" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S1_AXIS.HAS_TLAST" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S1_AXIS.HAS_TREADY" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S1_AXIS.HAS_TSTRB" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S1_AXIS.PHASE" xilinx:valuePermission="bd"/>
@@ -27729,6 +27729,7 @@ It is highly recommended to create MicroBlaze systems within Vivado IP Integrato
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_DIV" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_EXT_BRK" xilinx:valueSource="propagated"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_EXT_NM_BRK" xilinx:valueSource="propagated"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_FPU" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_HW_MUL" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_ICACHE" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_INTERRUPT" xilinx:valueSource="propagated" xilinx:valuePermission="bd_and_user"/>
